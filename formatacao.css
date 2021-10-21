@@ -144,13 +144,27 @@ a:hover
   }
   form
   {
+      display: flex;
       background-color: black;
       border-radius: 5%;
       padding: 50px;
       width: 98%;
       height: 79%;
       margin: 0;
+      align-content: space-around;
+      justify-content: space-around;
+      flex-flow: column wrap;
 
   }
+.fname, .CEP, .Renda, .Dependentes
+{
+    display: flex;
+    align-content: center;
+    flex-flow: column wrap;
+    height: 20%;
+    align-content: space-around;
+    justify-content: space-around;
 
+
+}
  
