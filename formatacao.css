@@ -8,22 +8,49 @@ body
     justify-content: center;
     overflow-y: hidden;
     overflow-x: hidden;
+    margin: 0;
 }
 .LogoNav 
 {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     display: flex;
     align-items: center;
     justify-content: center;   
     width: 50vw;
-    height: 100vh; 
-    border-right: 5px solid #ddd;
+    height: 99vh; 
+    border-right: 2.5px solid #ddd;
+    border-top: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+    flex-wrap: wrap;
+    border-radius: 1%;
+    
 /*     box-shadow: 
     0 -0.5vmin 4vmin #f3b202; */
 }
-.LogoNav .Logo
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.Logo
 {
-    animation: FadeInFadeOut 3s linear infinite;
-    animation-iteration-count: 3;
+/*      animation: FadeInFadeOut 3s linear infinite; 
+    animation-iteration-count: 3; */
+    animation: ;
+    transition: width 4s height 4s;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+.logo img
+{
+    width: 20vw ;
+    height: 5vw; 
 }
 /* .triangulo
 {
@@ -32,22 +59,98 @@ body
     position: absolute;
 }
  */
-@keyframes FadeInFadeOut
+/* @keyframes FadeInFadeOut
 {
     0% {opacity: 1;}
     50% {opacity: 0.1;}
     100% {opacity: 1;}
+} */
+
+nav
+{
+    width: 51%;
 }
 li
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+a
+{
     color: white;
-    text-decoration: none;
     list-style-type: none;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    transition: color 0.2s;
 
 }
+a:hover
+{
+    color:  #f3b202;
+    text-decoration: underline;
+
+}
+
+
 .formulario
 {
-    background-color: white;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    background-color: black;
     width: 50vw;
-    height: 100vh;
+    height: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 5px solid #ddd;
+    border-left: 2.5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+    border-radius: 1%;
+    
+    
 }
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .formulariodiv
+  {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    background-color: white;
+    width: 20vw;
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    font-family: 'Dosis', sans-serif;
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+
+  }
+  form
+  {
+      background-color: black;
+      border-radius: 5%;
+      padding: 50px;
+      width: 98%;
+      height: 79%;
+      margin: 0;
+
+  }
+
+ 
