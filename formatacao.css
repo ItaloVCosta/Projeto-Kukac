@@ -23,7 +23,7 @@ body
     border-bottom: 5px solid #ddd;
     flex-wrap: wrap;
     border-radius: 1%;
-    background-color: black;
+    background: black;
     
 /*     box-shadow: 
     0 -0.5vmin 4vmin #f3b202; */
@@ -41,6 +41,7 @@ body
 {
 /*      animation: FadeInFadeOut 3s linear infinite; 
     animation-iteration-count: 3; */
+
     transition: width 4s height 4s;
     width: 50%;
     display: flex;
@@ -156,10 +157,9 @@ a:hover
       flex-flow: column wrap;
 
   }
-.fname, .CEP, .Renda, .Dependentes
+.fname, .CEP, .Renda, .Dependentes, .Botao
 {
     display: flex;
-    align-content: center;
     flex-flow: column wrap;
     height: 20%;
     align-content: space-around;
@@ -167,8 +167,16 @@ a:hover
 
 
 }
-.Botao
+.Botao input
 {
-
+    padding: 7%;
+    border: 0;
+    border-radius: 100%;
+    background: linear-gradient(to right, red, purple);
 }
- 
+.Botao input:hover
+{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    background: black;
+}
